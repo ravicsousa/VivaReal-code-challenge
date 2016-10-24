@@ -4,9 +4,9 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html> 
+<html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Busca imóveis </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
@@ -547,6 +547,54 @@ and open the template in the editor.
                 border-top: 1px solid rgba(0, 0, 0, .12);
             }
 
+
+            .smart-card {
+                min-height: 240px;
+                background: #fff;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+            .smart-card__location-redirect {
+                min-height: 0px;
+            }
+            /* @media screen and (min-width:640px) */
+            .smart-card__location-redirect {
+                background: url(img/location-redirect-icon.png) 20px no-repeat #fff;
+                padding: 20px 0;
+            }
+            /* @media screen and (min-width:1024px) */
+            .smart-card {
+                margin: 16px 0;
+                -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .4);
+                -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .4);
+                box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.4);
+            }
+
+            .smart-card .smart-card-content {
+                padding: 30px;
+            }
+            .smart-card__location-redirect .smart-card-content {
+                padding: 10px 20px;
+                margin-bottom: 20px;
+                font-size: 14px;
+                font-size: 0.87rem;
+            }
+            .smart-card__location-redirect h3 {
+                text-align: left;
+                margin-top: 20px;
+                padding: 0 20px;
+            }
+            /* @media screen and (min-width:640px) */
+            .smart-card__location-redirect .smart-card-content, .smart-card__location-redirect h3 {
+                margin-left: 190px;
+            }
+            .smart-card h3 {
+                font-size: 20px;
+                font-size: 1.25rem;
+                color: #666;
+                margin-bottom: 10px;
+            }
+             
         </style>
     </head>
     <body>
@@ -663,8 +711,11 @@ and open the template in the editor.
                     var html = '<div class="Mask-separa"></div>',
                             el = document.getElementById("kome");
                     el.innerHTML = '';
-                    html += templateItens('', data);
-
+                    if (data.id != null || data.id !== undefined) {
+                        html += templateItens('', data);
+                    } else {
+                        html += semdados();
+                    }
                     html += '<div class="Mask-separa"></div>';
                     el.innerHTML = html;
                 });
@@ -698,7 +749,21 @@ and open the template in the editor.
                 strHtm += "<\/div>";
                 strHtm += "<\/div>";
                 return strHtm;
+            }
 
+            function semdados()
+            {
+                var strHtm = "";
+                strHtm += "<div class=\"smart-card smart-card__location-redirect\">";
+                strHtm += "      <header>";
+                strHtm += "        <h3>Ei, não conseguimos localizar imóveis para a sua busca<\/h3>";
+                strHtm += "      <\/header>";
+                strHtm += "      <div class=\"smart-card-content js-smartCardContent\">";
+                strHtm += "        Não encontramos imóveis para a sua busca .";
+                strHtm += "        Se preferir, mude os filtros selecionados.";
+                strHtm += "      <\/div>";
+                strHtm += "  <\/div>";
+                return strHtm;
             }
 
 
