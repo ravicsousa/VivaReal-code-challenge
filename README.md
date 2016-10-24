@@ -17,6 +17,6 @@ GET http://spotippos.vivareal.com/properties?ax=1&ay=1&bx=1400&by=1000
 
   Html 
   Css
-  Jquery
+  jQuery
 
  
