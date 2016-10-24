@@ -1,6 +1,6 @@
 # VivaReal-code-challenge 
 
-Sistema para busca de imoveis ultilizano API Abaixo
+Sistema para busca de imóveis utilizando API Abaixo
 
 # Ler um imóvel por ID:
 
