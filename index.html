@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html> 
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            body {
+                margin: 0;
+                /*width: 1280px;*/
+            }
+            html {
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            h1 {
+                font-size: 2em;
+                margin: .67em 0;
+            }
+            img {
+                border-style: none;
+            }
+            a {
+                background-color: transparent;
+                -webkit-text-decoration-skip: objects;
+            }
+            *, ::after, ::before {
+                -webkit-box-sizing: inherit;
+                box-sizing: inherit;
+            }
+            body {
+                font-family: Roboto;
+
+                line-height: 1.5;
+                color: #373a3c;
+                background-color: #fff;
+
+            }
+            div {
+                display: block;
+            }
+
+
+            fieldset{
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: 0;
+                font-size: 100%;
+                background: transparent;
+            }
+            .Rectangle-1 {
+                margin-left: auto;
+                margin-right: auto;
+                height: 60px;
+                background-color: #1190cd;
+
+            }
+            .Rectangle-51 {
+                width: 107px;
+                height: 60px;
+                background-color: #00acff;
+
+            }
+
+
+            .Rectangle-1483 {
+                width: 91px;
+                height: 72px;
+                border-radius: 4px;
+                background-color: #00acff;
+
+                margin-top:  1px; 
+                margin-left: -12px;
+
+                position: absolute;
+
+            }
+            .Rectangle-1484 {
+                width: 91px;
+                height: 72px;
+
+
+
+                margin-top:  80px; 
+                margin-left: -12px;
+
+                position: absolute;
+
+            }
+
+            .building {
+                width: 28.8px;
+                height: 30.6px;
+                object-fit: contain; 
+                margin-left: 30.6px;
+                padding-top: 7px;
+            }
+            .ANNCIOS {
+                width: 49px;
+                height: 13px;
+                font-family: Roboto;
+                font-size: 11px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: condensed;
+                color: #ffffff;
+                margin-left: 20.5px;
+                padding-top: 51.3px;
+
+            }
+
+
+
+            .plus-icon {
+                width: 27px;
+                height: 26px;
+                object-fit: contain;
+                margin-left: 30.6px;
+                padding-top: 7px;
+            }
+
+            .NOVO-ANNCIO {
+                width: 49px;
+                height: 13px;
+                font-family: Roboto;
+                font-size: 11px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: condensed;
+                color: #ffffff;
+                margin-left: 0.5px;
+                padding-top: 51.3px;
+            }
+
+
+            .logo-vivareal {
+                width: 48px;
+                height: 38px;
+                object-fit: contain;
+
+
+            }
+
+            .logo-vivareal {
+                margin-left: 30px;
+                margin-top: 11px;
+            }
+
+            .SPOTIPPOS---ANNCIOS {
+                padding-left:  137px;
+                width: 540px;
+                height: 28px;
+                font-family: Roboto;
+                font-size: 24px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: condensed;
+                color: #ffffff;
+                padding-left: 137px;
+                float: left;
+                position:    absolute;
+            }
+
+            .container-fluid {
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+
+            }
+
+            .container-fluid::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .row {
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .sidebar {
+                position:  absolute;
+                top: 60px;
+                bottom: 0;
+                left: 0;
+                /*z-index: 1000;*/
+                display: block;
+                padding: 20px;
+                overflow-x: hidden;
+                overflow-y: auto;
+
+            }
+
+            .sidebar.Rectangle-137-Copy-3 {
+                width: 107px;
+                height: 660px;
+                background-color: #094e6e;
+                height: 1246PX;
+            }
+
+            .main {
+                padding-right: 40px;
+                padding-left: 40px;
+            }
+            .main {
+                padding: 20px;
+                background-color: #f9f9f9;
+            }
+
+
+            .offset-md-2 {
+                margin-left: 16.666667%;
+            }
+            .col-md-2 {
+                float: left;
+
+            }
+            .col-md-10 {
+                float: left;
+                width: 83.333333%;
+            }
+
+
+            .Mask {
+                width: 230px;
+                height: 644px;
+                border-radius: 2px;
+                background-color: #f9f9f9;
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+            }
+
+            .sidebar-Mask {
+                margin-left: 116px;  
+                bottom: 0;
+                left: 0;
+                /*z-index: 1000;*/
+                display: block;
+                float: left;
+                HEIGHT: 1226PX;
+
+            }
+            .Mask-content {
+                width: 882px;
+
+                min-height: 644px;
+
+                border-radius: 2px;
+                background-color: #ffffff;
+
+                margin-left: 376px;  
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+            }
+
+            .Mask-item {
+                width: 849px;
+                height: 224px;
+                border-radius: 2px;
+                background-color: #ffffff;
+
+                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.26);
+
+                margin-left: 16.2px;
+
+
+                margin-bottom: 15px; 
+            }
+            .Mask-separa {
+
+
+                height: 15px;
+            }
+            .Bitmap {
+                width: 297.7px;
+                height: 223.6px;
+            }
+
+
+            .Mask-item-sub {
+                width: 550.6px;
+                height: 223.6px;
+                float: right;
+                top: 0px;
+            }
+
+            .Rectangle-472 {
+                width: 551px;
+                height: 50px;
+                background-color: #fafafa;
+
+                box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+                margin-top: 19px;
+                padding-right: 10px;
+                float: right;
+                top: 0px;
+            }
+            .btn {
+                display: inline-block;
+                padding: 6px 12px;
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 1.42857143;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                background-image: none;
+                border: 1px solid transparent;
+                border-radius: 4px;
+            }
+            .button-barra-38-8-8 {
+                width: 184px;
+                height: 32px;
+                border-radius: 2px;
+                background-color: #00acff;  
+                box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.12);
+                float: right;
+                margin-top: -42px;
+            }
+
+            .button-buscar-38-8-8 {
+                width: 184px;
+                height: 32px;
+                border-radius: 2px;
+                background-color: #00acff;  
+                box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.12);
+                float: right;
+                margin-top: 22px;
+                margin-right: 10px
+            }
+            .VISUALIZAR-ANNCIO {
+                width: 127px;
+                height: 16px;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: condensed;
+                line-height: 1.14;
+                color: #ffffff;
+
+
+            }
+            .ic_card_area {
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+                margin-top: 6px;
+                margin-left: 21px;
+            }
+            .ic_card_beds {
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+                margin-top: 6px;
+                margin-left: 33px;
+            }
+            .ic_card_bathroom {
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+                margin-top: 6px;
+                margin-left: 30px;
+            }
+
+
+            .lbl-m {
+                width: 41px;
+                height: 15px;
+                font-family: Roboto;
+                font-size: 10px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: condensed;
+                color: #999999;
+                margin-top: -4px;
+                margin-left: 22px;
+
+            }
+
+            .lbl-quartos {
+                width: 75px;
+                height: 20px;
+                font-family: Roboto;
+                font-size: 10px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: condensed;
+                color: #999999;
+                margin-top: -16px;
+                margin-left: 62px;
+
+            }
+            .lbl-banheiros {
+                width: 93px;
+                height: 20px;
+                font-family: Roboto;
+                font-size: 10px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: condensed;
+                color: #999999;
+                margin-top: -20px;
+                margin-left: 125px;
+            }
+
+
+            .m-copy-4 {
+                width: 64px;
+                height: 15px;
+                font-family: Roboto;
+                font-size: 13px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: condensed;
+                line-height: 1.15;
+                color: #878787;
+                object-fit: contain;
+                position:      inherit; 
+                margin-top: 14px;
+                margin-left: 21px;
+            }
+
+            .Imvel-cdigo-1234 {
+                width: 402.8px;
+                height: 27px;
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: condensed;
+                line-height: 1.5;
+                color: #444444;
+                object-fit: contain;
+                position:      inherit; 
+                margin-left: 21px;
+                margin-top: 12.6px;
+            }
+
+            .Lorem-ipsum-dolor-si {
+                width: 500.6px;
+                height: 84px;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: condensed;
+                line-height: 1.5;
+                color: #999999;
+                object-fit: contain;
+                position:      inherit; 
+
+
+                margin-top: 3.4px;
+                margin-left: 21px;
+            }
+            .R-595000 {
+                width: 120px;
+                height: 32px;
+                font-family: OpenSans;
+                font-size: 23.1px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.39;
+                color: #ffffff;
+                object-fit: contain;
+                position:      absolute; 
+                margin-top: 182px;
+                margin-left: -282px;
+
+            }
+
+
+            .filtro-txt-2 {
+                width: 33px;
+                height: 20px;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: condensed;
+                line-height: 1.25;
+                color: #666666;
+                top: 13px;
+                margin-left: 13px;
+            }
+
+            .result-list__left-column {
+                float: left;
+                width: 230px;
+                vertical-align: top;
+                margin-right: 10px;
+                margin-left: 0px;
+            }
+
+            .filter-range__column {
+                width: 48%;
+                float: left;
+                position: relative;
+                padding-left: 10px;
+            }
+            .filter-range__field {
+                width: 100%;
+                border: 1px solid #ddd;
+                border-radius: 2px;
+                height: 37px;
+                font-size: 14px;
+                font-size: 0.87rem;
+                color: rgba(0, 0, 0, 0.54);
+                margin-top: 6px;
+
+                border-radius: 2px;
+                background-color: #ffffff;
+                border: solid 1px #979797;
+
+            }
+            .filter-range--currency.filter-range__field {
+                padding-left: 32px;
+                padding-right: 8px;
+                text-align: right;
+            }
+            /*media all*/
+            .result-filters__filter {
+
+                padding: 4.44%;
+                border-top: 1px solid rgba(0, 0, 0, .12);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="Rectangle-1">
+            <span class="SPOTIPPOS---ANNCIOS">SPOTIPPOS - ANÚNCIOS</span> 
+            <div class="Rectangle-51">
+                <img class="logo-vivareal" src="img/logo-vivareal_2016-10-20/logo-vivareal.png" alt=""/>
+            </div>
+
+
+        </div>  
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="Rectangle-137-Copy-3 col-md-2 sidebar">
+
+                    <div class="Rectangle-1483">
+                        <img class="building" src="img/building_2016-10-20/building.png" alt=""/>
+
+                        <span class="ANNCIOS">ANNCIOS</span>
+                    </div>
+
+                    <div class="Rectangle-1484">
+                        <img class="plus-icon" src="img/plus-icon_2016-10-20/plus-icon.png" alt=""/>
+                        <span class="NOVO-ANNCIO">NOVO ANÚNCIO</span>  
+                    </div>
+
+                </div>
+                <div class=" main">
+
+                    <div class="sidebar-Mask Mask">
+                        <span class="filtro-txt-2" >
+                            Filtro
+                        </span>
+                        <div class="result-list__left-column">
+                            <fieldset class="result-filters__wrapper">
+                                <div class="site-main__filter-range result-filters__filter">
+                                    <fieldset class="site-main__filter-range filter-range">
+                                        <div class="filter-range__column">
+                                            <label class="filter-range__label filter-range--currency"  >ID. 
+                                                <input title="ID" class="filter-range__field filter-range--currency js-priceField js-textRangeFilter" id="ID" type="text" ></label></div>
+                                        <div class="filter-range__column">
+                                            <label class="filter-range__label filter-range--currency" >ÁREA. 
+                                                <input title="ÁREA" class="filter-range__field filter-range--currency js-priceField js-textRangeFilter" id="AREA" type="text" ></label></div></fieldset>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="result-list__left-column">
+                            <fieldset class="result-filters__wrapper">
+                                <div class="site-main__filter-range result-filters__filter">
+                                    <fieldset class="site-main__filter-range filter-range">
+                                        <div class="filter-range__column">
+                                            <label class="filter-range__label filter-range--currency" >QUARTOS. 
+                                                <input title="QUARTOS" class="filter-range__field filter-range--currency js-priceField js-textRangeFilter" id="QUARTOS" type="text" ></label></div>
+                                        <div class="filter-range__column">
+                                            <label class="filter-range__label filter-range--currency" >BANHEIROS. 
+                                                <input title="BANHEIROS" class="filter-range__field filter-range--currency js-priceField js-textRangeFilter" id="BANHEIROS" type="text" ></label></div></fieldset>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="result-list__left-column">
+                            <fieldset class="result-filters__wrapper">
+                                <div class="site-main__filter-range result-filters__filter">
+                                    <fieldset class="site-main__filter-range filter-range">
+                                        <div class="filter-range__column">
+                                            <label class="filter-range__label filter-range--currency" >Preço Mín. 
+                                                <input title="Preço inicial" class="filter-range__field filter-range--currency js-priceField js-textRangeFilter" id="min-price" type="text" ></label></div>
+                                        <div class="filter-range__column">
+                                            <label class="filter-range__label filter-range--currency" >Preço Máx. 
+                                                <input title="Preço final" class="filter-range__field filter-range--currency js-priceField js-textRangeFilter" id="max-price" type="text" ></label></div></fieldset>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="result-list__left-column">
+                            <button type="button" class="btn button-buscar-38-8-8" id="btnbuscar"><span class="VISUALIZAR-ANNCIO">BUSCAR</span></button>
+                        </div>
+                    </div>
+                    <div id="kome" class="Mask-content">
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <script src="js/lib.js" type="text/javascript"></script>
+
+
+        <script>
+
+
+            function bucarMob(bx, by) {
+                $.getJSON("http://spotippos.vivareal.com/properties?ax=1&ay=1&bx=" + bx + "&by=" + by, function (data) {
+
+                    var html = '<div class="Mask-separa"></div>',
+                            el = document.getElementById("kome");
+                    el.innerHTML = '';
+                    $.each(data.properties, function (key, val) {
+
+                        //html += "<td><a href=" + val.link + " data-ajax='false'><img src=" + val.img + "><div class='dsc'>" + val.expo + "<br><em>" + val.datum + "</em></div></a></td>";
+                        html += templateItens(key, val);
+                    });
+                    html += '<div class="Mask-separa"></div>';
+                    el.innerHTML = html;
+                });
+
+            }
+
+
+            function bucarid(id) {
+                $.getJSON("http://spotippos.vivareal.com/properties/" + id, function (data) {
+
+                    var html = '<div class="Mask-separa"></div>',
+                            el = document.getElementById("kome");
+                    el.innerHTML = '';
+                    html += templateItens('', data);
+
+                    html += '<div class="Mask-separa"></div>';
+                    el.innerHTML = html;
+                });
+
+            }
+
+            function templateItens(key, val)
+            {
+
+                var strHtm = "";
+                strHtm += "<div class=\"Mask-item\">";
+                strHtm += " <img class=\"Bitmap\" src=\"img\/imb-item.png\" alt=\"\"\/>";
+                strHtm += " <span class=\"R-595000\" >R$ " + val.price + "</span>";
+                strHtm += " <div class=\"Mask-item-sub\" >";
+                strHtm += "     <div class=\"m-copy-4\">ID. " + val.id + "<\/div>";
+                strHtm += "     <div class=\"Imvel-cdigo-1234\">" + val.title + "<\/div>";
+                strHtm += "     <div class=\"Lorem-ipsum-dolor-si\">";
+                strHtm += val.description;
+                strHtm += "<\/div>";
+                strHtm += "<div class=\"Rectangle-472\">";
+                strHtm += "<img class=\"ic_card_area\" src=\"img\/ic-card-area_2016-10-20\/ic-card-area.png\" alt=\"\"\/>";
+                strHtm += "";
+                strHtm += "<img class=\"ic_card_beds\" src=\"img\/ic-card-bathroom_2016-10-20\/ic-card-bathroom.png\" alt=\"\"\/>";
+                strHtm += "";
+                strHtm += "<img class=\"ic_card_bathroom\" src=\"img\/ic-card-beds_2016-10-20\/ic-card-beds.png\" alt=\"\"\/>                                ";
+                strHtm += "<div class=\"lbl-m \">" + val.squareMeters + " M²<\/div>";
+                strHtm += "<div class=\"lbl-quartos\">" + val.beds + " QUARTOS<\/div>";
+                strHtm += "<div class=\"lbl-banheiros\">" + val.baths + " BANHEIROS<\/div>";
+                strHtm += "<button type=\"button\" class=\"btn button-barra-38-8-8\"><span class=\"VISUALIZAR-ANNCIO\">VISUALIZAR ANÚNCIO<\/span><\/button>";
+                strHtm += "<\/div>";
+                strHtm += "<\/div>";
+                strHtm += "<\/div>";
+                return strHtm;
+
+            }
+
+
+            $(document).ready(function () {
+                bucarMob(20, 40);
+
+
+            });
+            var btnbuscar = document.getElementById('btnbuscar'),
+                    inputID = document.getElementById('ID');
+            btnbuscar.onclick = function () {
+                //alert(1);
+                if (inputID.value === '')
+                {
+                    bucarMob(20, 40);
+                } else {
+                    bucarid(inputID.value);
+                }
+            };
+        </script>
+    </body>
+</html>
